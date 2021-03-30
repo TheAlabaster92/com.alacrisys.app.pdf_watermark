@@ -1,4 +1,5 @@
 PHP/Python PDF Watermarking v0.06 - Th92
+    A simple application to watermark a PDF file.
 
 Requirements:
     PHP 5.x
@@ -17,21 +18,4 @@ Usage:
         t = base64 encoded text to write as watermark (default: "Copia per TEST")
             - This parameter is optional
             - In case no user is defined in PHP from Apache the default is TEST
-
-Changelog:
-    v0.6 --------------------------
-        Fix paths and index.php listing
-    v0.5 --------------------------
-        Fix Int-Float mixed operations
-    v0.4 --------------------------
-        Change REST API t param to require base64 encoding
-    v0.3 --------------------------
-        Added Index.php for testing
-        Added -t parameter to PHP REST API
-        Fixed PHP Output file path
-    v0.2 --------------------------
-        Fixed PHP code cross compatibility
-        Fixed PHP code when user not present
-        Fixed Python code string position
-    v0.1 --------------------------
-        First version
+    2.c Spin a local webserver by using "php -S 127.0.0.1:8000" starting in the root folder then navigate to the index.php page
