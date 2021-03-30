@@ -1,0 +1,16 @@
+v0.6 --------------------------
+    Fix paths and index.php listing
+v0.5 --------------------------
+    Fix Int-Float mixed operations
+v0.4 --------------------------
+    Change REST API t param to require base64 encoding
+v0.3 --------------------------
+    Added Index.php for testing
+    Added -t parameter to PHP REST API
+    Fixed PHP Output file path
+v0.2 --------------------------
+    Fixed PHP code cross compatibility
+    Fixed PHP code when user not present
+    Fixed Python code string position
+v0.1 --------------------------
+    First version
