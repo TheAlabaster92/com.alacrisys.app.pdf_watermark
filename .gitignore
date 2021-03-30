@@ -1,0 +1,8 @@
+/rel
+/old
+
+*.pdf
+*.php
+
+!WatermarkPDF.php
+!index.php

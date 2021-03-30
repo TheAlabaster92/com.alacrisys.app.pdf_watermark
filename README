@@ -1,0 +1,37 @@
+PHP/Python PDF Watermarking v0.06 - Th92
+
+Requirements:
+    PHP 5.x
+    Python 3.x
+        Modules: os, sys, io, PyPDF2, reportlab
+
+Usage:
+    1. Place PDF files in the root directory
+    2.a Run the python (./assets/lib/lib.pdf.watermark.py) script from commandline giving the following parameters:
+        -i path to the input file (Required, default: "./dummy.pdf")
+        -o path to the output file (Required, default: "./dummy.merged.pdf")
+        -t text to write as watermark (Required, default: "Copia per TEST")
+    2.b Use the WatermarkPDF.php as a REST API passing the parameter:
+        i = base64 encoded path to the pdf (default: "./dummy.pdf")
+            - This parameter is optional
+        t = base64 encoded text to write as watermark (default: "Copia per TEST")
+            - This parameter is optional
+            - In case no user is defined in PHP from Apache the default is TEST
+
+Changelog:
+    v0.6 --------------------------
+        Fix paths and index.php listing
+    v0.5 --------------------------
+        Fix Int-Float mixed operations
+    v0.4 --------------------------
+        Change REST API t param to require base64 encoding
+    v0.3 --------------------------
+        Added Index.php for testing
+        Added -t parameter to PHP REST API
+        Fixed PHP Output file path
+    v0.2 --------------------------
+        Fixed PHP code cross compatibility
+        Fixed PHP code when user not present
+        Fixed Python code string position
+    v0.1 --------------------------
+        First version
